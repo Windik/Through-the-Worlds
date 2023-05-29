@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/left_boot.obj-835690480b8021b57013c59bd181fb09.mesh"
+
+[deps]
+
+files=[ "res://.import/left_boot.obj-835690480b8021b57013c59bd181fb09.mesh" ]
+
+source_file="res://3DModels/Boots/left_boot.obj"
+dest_files=[ "res://.import/left_boot.obj-835690480b8021b57013c59bd181fb09.mesh", "res://.import/left_boot.obj-835690480b8021b57013c59bd181fb09.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

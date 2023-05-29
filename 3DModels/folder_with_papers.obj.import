@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/folder_with_papers.obj-f12b5a5e6a5502fd07756d1198cdc3bf.mesh"
+
+[deps]
+
+files=[ "res://.import/folder_with_papers.obj-f12b5a5e6a5502fd07756d1198cdc3bf.mesh" ]
+
+source_file="res://3DModels/folder_with_papers.obj"
+dest_files=[ "res://.import/folder_with_papers.obj-f12b5a5e6a5502fd07756d1198cdc3bf.mesh", "res://.import/folder_with_papers.obj-f12b5a5e6a5502fd07756d1198cdc3bf.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://3DModels/Barrel/barrel.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://3DModels/Barrel/Barrel_Normal.png" type="Texture" id=2]
+[ext_resource path="res://3DModels/Barrel/Barrel_Diffuse.png" type="Texture" id=3]
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_texture = ExtResource( 3 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 2 )
+
+[sub_resource type="CylinderShape" id=19]
+height = 3.25605
+
+[node name="barrel" type="StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -9.65196, 1.33899, -10.0698 )
+
+[node name="barrel" type="MeshInstance" parent="."]
+unique_name_in_owner = true
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 18 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+shape = SubResource( 19 )

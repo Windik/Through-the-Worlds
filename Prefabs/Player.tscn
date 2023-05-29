@@ -1,0 +1,69 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Scripts/PlayerMove.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/GunShoot.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/PlayerArea.gd" type="Script" id=3]
+[ext_resource path="res://Music/lvl1_bg.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Sounds/Pistol_shot.wav" type="AudioStream" id=5]
+[ext_resource path="res://Materials/gun_material.tres" type="Material" id=6]
+
+[sub_resource type="CylinderMesh" id=6]
+
+[sub_resource type="Environment" id=33]
+background_energy = 0.0
+
+[sub_resource type="CubeMesh" id=13]
+
+[sub_resource type="SphereShape" id=32]
+radius = 1.29711
+
+[sub_resource type="SphereShape" id=31]
+radius = 0.42369
+
+[node name="Player" type="KinematicBody"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1.19957, 3.51873 )
+script = ExtResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+mesh = SubResource( 6 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.132174, 0 )
+environment = SubResource( 33 )
+
+[node name="Gun" type="MeshInstance" parent="Camera"]
+transform = Transform( 0.02, 0, 0, 0, 0.03, 0, 0, 0, 0.2, 0.115003, -0.114382, -0.257658 )
+mesh = SubResource( 13 )
+material/0 = ExtResource( 6 )
+script = ExtResource( 2 )
+
+[node name="Gun2" type="MeshInstance" parent="Camera/Gun"]
+transform = Transform( 0.2, 0, 0, 0, 0.5, 0, 0, 0, 0.1, 0, 1.01253, -0.802034 )
+mesh = SubResource( 13 )
+skeleton = NodePath("../..")
+material/0 = ExtResource( 6 )
+
+[node name="Position3D" type="Position3D" parent="Camera/Gun"]
+transform = Transform( 5, 0, 0, 0, 3.33333, 0, 0, 0, 0.5, 0, 0, -1.14916 )
+
+[node name="Shoot" type="AudioStreamPlayer3D" parent="Camera/Gun"]
+stream = ExtResource( 5 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, -0.0110291, 0 )
+shape = SubResource( 32 )
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
+stream = ExtResource( 4 )
+autoplay = true
+
+[node name="PlayerArea" type="Area" parent="."]
+script = ExtResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="PlayerArea"]
+shape = SubResource( 31 )
+
+[connection signal="body_entered" from="PlayerArea" to="PlayerArea" method="_on_PlayerArea_body_entered"]
+[connection signal="body_exited" from="PlayerArea" to="PlayerArea" method="_on_PlayerArea_body_exited"]

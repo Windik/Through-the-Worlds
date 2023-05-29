@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/bush1.obj-8456f64399f0b72edcda47394f342407.mesh"
+
+[deps]
+
+files=[ "res://.import/bush1.obj-8456f64399f0b72edcda47394f342407.mesh" ]
+
+source_file="res://3DModels/Bush/bush1.obj"
+dest_files=[ "res://.import/bush1.obj-8456f64399f0b72edcda47394f342407.mesh", "res://.import/bush1.obj-8456f64399f0b72edcda47394f342407.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stick5.obj-6140d0188648887ad2894dabf6ddb414.mesh"
+
+[deps]
+
+files=[ "res://.import/stick5.obj-6140d0188648887ad2894dabf6ddb414.mesh" ]
+
+source_file="res://3DModels/Trees/lowpoly-sticks/source/stick5.obj"
+dest_files=[ "res://.import/stick5.obj-6140d0188648887ad2894dabf6ddb414.mesh", "res://.import/stick5.obj-6140d0188648887ad2894dabf6ddb414.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286
