@@ -16,7 +16,7 @@ signal cell1_item1  ###############
 var fall = Vector3.ZERO
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	if get_tree().current_scene.name == "Lvl_1":
+	if get_tree().current_scene.name == "Lvl1":
 		gates = $"../../GatesDoor"
 	hints = Interface.get_node("Hints")  # get_tree().get_root().find_node("Hints")
 	connect("cell1_item1", Interface, "_on_transfer_value") ##############
@@ -32,7 +32,7 @@ func _physics_process(delta):
 	if portalTrigger:
 		if (Input.is_action_just_pressed("interaction")):
 			get_tree().change_scene("res://Levels/Home_Dimension.tscn")
-	if get_tree().current_scene.name == "Lvl_1":
+	if get_tree().current_scene.name == "Lvl1":
 		if gates_open:
 			# print(gates.transform.origin.y)
 			if gates.transform.origin.y < 4:
