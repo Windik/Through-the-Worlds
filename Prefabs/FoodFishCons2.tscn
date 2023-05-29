@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://3DModels/conserva_fish1.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Textures/saira2.jpg" type="Texture" id=2]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.780392, 0.643137, 0, 1 )
@@ -9,7 +8,7 @@ metallic = 1.0
 roughness = 0.59
 
 [sub_resource type="SpatialMaterial" id=4]
-albedo_texture = ExtResource( 2 )
+albedo_color = Color( 0, 1, 0.392157, 1 )
 
 [sub_resource type="CylinderShape" id=3]
 height = 0.741711

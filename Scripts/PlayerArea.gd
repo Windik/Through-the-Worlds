@@ -27,16 +27,19 @@ func _physics_process(delta):
 		if (Input.is_action_just_pressed("interaction")):
 			gates_open = true
 	if near_bunker_entrence:
+		print("Near bunker entrence...")
 		if (Input.is_action_just_pressed("interaction")):
-			get_tree().change_scene("res://Levels/Lvl_2.tscn")
+			hints.text = "Open bunker door..."
+			get_tree().change_scene("res://Levels/Lvl2.tscn")
+			
 	if portalTrigger:
 		if (Input.is_action_just_pressed("interaction")):
-			get_tree().change_scene("res://Levels/Home_Dimension.tscn")
+			get_tree().change_scene("res://Levels/HomeDimension.tscn")
 	if get_tree().current_scene.name == "Lvl1":
 		if gates_open:
 			# print(gates.transform.origin.y)
 			if gates.transform.origin.y < 4:
-				fall.y += 0.01 * delta
+				fall.y += 0.03 * delta
 				gates.move_and_slide(fall, Vector3.UP)
 	if oldKeyTrigger:  ##################
 		if (Input.is_action_just_pressed("interaction")):  #############
@@ -51,7 +54,7 @@ func _physics_process(delta):
 		if oldKeyInInventory:
 			if (Input.is_action_just_pressed("interaction")):
 				Interface.cell1_item1 = ""
-				get_tree().change_scene("res://Levels/Lvl_tower.tscn")
+				get_tree().change_scene("res://Levels/Lvltower.tscn")
 		
 				
 
