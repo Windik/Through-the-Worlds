@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/portal_1.obj-4085314bbe91e870782b4749da7cdac1.mesh"
+uid="uid://k8er2sjsgl15"
+path="res://.godot/imported/portal_1.obj-4085314bbe91e870782b4749da7cdac1.mesh"
 
 [deps]
 
-files=[ "res://.import/portal_1.obj-4085314bbe91e870782b4749da7cdac1.mesh" ]
+files=["res://.godot/imported/portal_1.obj-4085314bbe91e870782b4749da7cdac1.mesh"]
 
 source_file="res://3DModels/portal_1.obj"
-dest_files=[ "res://.import/portal_1.obj-4085314bbe91e870782b4749da7cdac1.mesh", "res://.import/portal_1.obj-4085314bbe91e870782b4749da7cdac1.mesh" ]
+dest_files=["res://.godot/imported/portal_1.obj-4085314bbe91e870782b4749da7cdac1.mesh", "res://.godot/imported/portal_1.obj-4085314bbe91e870782b4749da7cdac1.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

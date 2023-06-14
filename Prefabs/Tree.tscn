@@ -2,25 +2,25 @@
 
 [ext_resource path="res://3DModels/Trees/JASMIM+MANGA.obj" type="ArrayMesh" id=1]
 
-[sub_resource type="CylinderShape" id=41]
+[sub_resource type="CylinderShape3D" id=41]
 height = 4.00689
 radius = 0.231505
 
-[node name="Tree" type="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2227, 0, 4.05351 )
+[node name="Tree" type="StaticBody3D"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -13.2227, 0, 4.05351 )
 
-[node name="JASMIM+MANGA" type="MeshInstance" parent="."]
-transform = Transform( 0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -6.00075, 0.0500124, 6.60784 )
+[node name="JASMIM+MANGA" type="MeshInstance3D" parent="."]
+transform = Transform3D( 0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -6.00075, 0.0500124, 6.60784 )
 mesh = ExtResource( 1 )
 
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 0.986309, -0.16491, 0, 0.16491, 0.986309, 0, 0, 0, 1, 0.213437, 2.36027, -0.269392 )
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D( 0.986309, -0.16491, 0, 0.16491, 0.986309, 0, 0, 0, 1, 0.213437, 2.36027, -0.269392 )
 shape = SubResource( 41 )
 
-[node name="CollisionShape2" type="CollisionShape" parent="."]
-transform = Transform( -0.191273, -0.0177347, 0.981377, 0.622167, 0.771123, 0.135197, -0.75916, 0.636439, -0.136461, -0.110909, 4.98415, 0.928149 )
+[node name="CollisionShape2" type="CollisionShape3D" parent="."]
+transform = Transform3D( -0.191273, -0.0177347, 0.981377, 0.622167, 0.771123, 0.135197, -0.75916, 0.636439, -0.136461, -0.110909, 4.98415, 0.928149 )
 shape = SubResource( 41 )
 
-[node name="CollisionShape3" type="CollisionShape" parent="."]
-transform = Transform( -0.543467, 0.510968, -0.665999, 0.60396, 0.789032, 0.112519, 0.582989, -0.341086, -0.737417, 0.941845, 5.29202, -0.74449 )
+[node name="CollisionShape3" type="CollisionShape3D" parent="."]
+transform = Transform3D( -0.543467, 0.510968, -0.665999, 0.60396, 0.789032, 0.112519, 0.582989, -0.341086, -0.737417, 0.941845, 5.29202, -0.74449 )
 shape = SubResource( 41 )

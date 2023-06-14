@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Images/Achivement.png" type="Texture" id=1]
+[ext_resource path="res://Images/Achivement.png" type="Texture2D" id=1]
 [ext_resource path="res://Scripts/AchiveBox.gd" type="Script" id=2]
 [ext_resource path="res://Scripts/Achivement.gd" type="Script" id=3]
 
@@ -12,17 +12,17 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -301.0
-margin_top = 2.0
-margin_right = -1.0
-margin_bottom = 52.0
+offset_left = -301.0
+offset_top = 2.0
+offset_right = -1.0
+offset_bottom = 52.0
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="AchiveTitle" type="Label" parent="AchiveBox"]
 anchor_right = 1.0
-margin_top = 2.0
-margin_bottom = 16.0
+offset_top = 2.0
+offset_bottom = 16.0
 align = 1
 
 [node name="AchiveText" type="RichTextLabel" parent="AchiveBox"]
@@ -33,7 +33,7 @@ anchor_bottom = 0.5
 fit_content_height = true
 
 [node name="Timer" type="Timer" parent="."]
-pause_mode = 2
+process_mode = 2
 wait_time = 7.0
 
 [connection signal="timeout" from="Timer" to="AchiveBox" method="_on_Timer_timeout"]

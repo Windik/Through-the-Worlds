@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/quit_text.obj-c3701c400244477d9b2e8a968d02aed7.mesh"
+uid="uid://cnlsh6pata5xl"
+path="res://.godot/imported/quit_text.obj-c3701c400244477d9b2e8a968d02aed7.mesh"
 
 [deps]
 
-files=[ "res://.import/quit_text.obj-c3701c400244477d9b2e8a968d02aed7.mesh" ]
+files=["res://.godot/imported/quit_text.obj-c3701c400244477d9b2e8a968d02aed7.mesh"]
 
 source_file="res://3DModels/quit_text.obj"
-dest_files=[ "res://.import/quit_text.obj-c3701c400244477d9b2e8a968d02aed7.mesh", "res://.import/quit_text.obj-c3701c400244477d9b2e8a968d02aed7.mesh" ]
+dest_files=["res://.godot/imported/quit_text.obj-c3701c400244477d9b2e8a968d02aed7.mesh", "res://.godot/imported/quit_text.obj-c3701c400244477d9b2e8a968d02aed7.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

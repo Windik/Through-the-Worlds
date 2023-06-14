@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/wood_box.obj-b9de1f011d79d64a86f32f1a8445e340.mesh"
+uid="uid://spox4ubu41pb"
+path="res://.godot/imported/wood_box.obj-b9de1f011d79d64a86f32f1a8445e340.mesh"
 
 [deps]
 
-files=[ "res://.import/wood_box.obj-b9de1f011d79d64a86f32f1a8445e340.mesh" ]
+files=["res://.godot/imported/wood_box.obj-b9de1f011d79d64a86f32f1a8445e340.mesh"]
 
 source_file="res://3DModels/wood_box.obj"
-dest_files=[ "res://.import/wood_box.obj-b9de1f011d79d64a86f32f1a8445e340.mesh", "res://.import/wood_box.obj-b9de1f011d79d64a86f32f1a8445e340.mesh" ]
+dest_files=["res://.godot/imported/wood_box.obj-b9de1f011d79d64a86f32f1a8445e340.mesh", "res://.godot/imported/wood_box.obj-b9de1f011d79d64a86f32f1a8445e340.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

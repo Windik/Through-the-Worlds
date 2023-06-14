@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/luck.obj-5c135c12793799229a9dedb91a644b1c.mesh"
+uid="uid://5kgn01va4ta8"
+path="res://.godot/imported/luck.obj-5c135c12793799229a9dedb91a644b1c.mesh"
 
 [deps]
 
-files=[ "res://.import/luck.obj-5c135c12793799229a9dedb91a644b1c.mesh" ]
+files=["res://.godot/imported/luck.obj-5c135c12793799229a9dedb91a644b1c.mesh"]
 
 source_file="res://3DModels/luck.obj"
-dest_files=[ "res://.import/luck.obj-5c135c12793799229a9dedb91a644b1c.mesh", "res://.import/luck.obj-5c135c12793799229a9dedb91a644b1c.mesh" ]
+dest_files=["res://.godot/imported/luck.obj-5c135c12793799229a9dedb91a644b1c.mesh", "res://.godot/imported/luck.obj-5c135c12793799229a9dedb91a644b1c.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

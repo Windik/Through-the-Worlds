@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/boots.obj-57d6a1afeb07b766b2f4e85ba4cec93b.mesh"
+uid="uid://cb3c77k7geqn4"
+path="res://.godot/imported/boots.obj-57d6a1afeb07b766b2f4e85ba4cec93b.mesh"
 
 [deps]
 
-files=[ "res://.import/boots.obj-57d6a1afeb07b766b2f4e85ba4cec93b.mesh" ]
+files=["res://.godot/imported/boots.obj-57d6a1afeb07b766b2f4e85ba4cec93b.mesh"]
 
 source_file="res://3DModels/boots.obj"
-dest_files=[ "res://.import/boots.obj-57d6a1afeb07b766b2f4e85ba4cec93b.mesh", "res://.import/boots.obj-57d6a1afeb07b766b2f4e85ba4cec93b.mesh" ]
+dest_files=["res://.godot/imported/boots.obj-57d6a1afeb07b766b2f4e85ba4cec93b.mesh", "res://.godot/imported/boots.obj-57d6a1afeb07b766b2f4e85ba4cec93b.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

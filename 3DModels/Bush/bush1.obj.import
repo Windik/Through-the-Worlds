@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/bush1.obj-8456f64399f0b72edcda47394f342407.mesh"
+uid="uid://3a0qiew18trw"
+path="res://.godot/imported/bush1.obj-8456f64399f0b72edcda47394f342407.mesh"
 
 [deps]
 
-files=[ "res://.import/bush1.obj-8456f64399f0b72edcda47394f342407.mesh" ]
+files=["res://.godot/imported/bush1.obj-8456f64399f0b72edcda47394f342407.mesh"]
 
 source_file="res://3DModels/Bush/bush1.obj"
-dest_files=[ "res://.import/bush1.obj-8456f64399f0b72edcda47394f342407.mesh", "res://.import/bush1.obj-8456f64399f0b72edcda47394f342407.mesh" ]
+dest_files=["res://.godot/imported/bush1.obj-8456f64399f0b72edcda47394f342407.mesh", "res://.godot/imported/bush1.obj-8456f64399f0b72edcda47394f342407.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

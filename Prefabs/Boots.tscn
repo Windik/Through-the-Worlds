@@ -2,23 +2,23 @@
 
 [ext_resource path="res://3DModels/boots.obj" type="ArrayMesh" id=1]
 
-[sub_resource type="BoxShape" id=18]
-extents = Vector3( 1, 0.826098, 0.277454 )
+[sub_resource type="BoxShape3D" id=18]
+size = Vector3( 1, 0.826098, 0.277454 )
 
-[sub_resource type="BoxShape" id=19]
-extents = Vector3( 0.131328, 0.0371335, 0.134287 )
+[sub_resource type="BoxShape3D" id=19]
+size = Vector3( 0.131328, 0.0371335, 0.134287 )
 
-[node name="Boots" type="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2996, 1.06885, -16.4617 )
+[node name="Boots" type="StaticBody3D"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2996, 1.06885, -16.4617 )
 
-[node name="boots" type="MeshInstance" parent="."]
-transform = Transform( 0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0 )
+[node name="boots" type="MeshInstance3D" parent="."]
+transform = Transform3D( 0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0 )
 mesh = ExtResource( 1 )
 
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0.139053, 0.081461 )
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D( 0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0.139053, 0.081461 )
 shape = SubResource( 18 )
 
-[node name="CollisionShape2" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0162506, 0 )
+[node name="CollisionShape2" type="CollisionShape3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0162506, 0 )
 shape = SubResource( 19 )

@@ -1,6 +1,6 @@
-extends KinematicBody
+extends CharacterBody3D
 
-onready var player = get_parent().get_parent().get_node("Player")
+@onready var player = get_parent().get_parent().get_node("Player")
 var speed = 1.8
 var distance = 10
 var atackDistance = 1.8
@@ -12,8 +12,8 @@ var fall = Vector3.ZERO
 var radius = 100
 
 var playerGetDamage = preload("res://Sounds/dsplpain.wav")
-onready var anim =$"Mutant Run (1)/RootNode/AnimationPlayer"
-onready var nav = get_parent()
+@onready var anim =$"Mutant Run (1)/RootNode/AnimationPlayer"
+@onready var nav = get_parent()
 
 func _physics_process(delta):
 	var player_origin = player.get_global_transform().origin
@@ -35,9 +35,12 @@ func _physics_process(delta):
 		if dir.length() < 1:
 			path.node += 1
 		else:
-			move_and_slide(dir.normalized() * speed, Vector3.UP)
+			set_velocity(dir.normalized() * speed)
+			set_up_direction(Vector3.UP)
+			move_and_slide()
 	fall.y -= 10
-	move_and_slide(fall)
+	set_velocity(fall)
+	move_and_slide()
 	
 func move_to(target_pos):
 	path = nav.get_simple_path(global_transform.origin, target_pos)
@@ -45,7 +48,7 @@ func move_to(target_pos):
 
 
 func _on_Timer_timeout():
-	var random_position = Vector3(rand_range(-radius, radius), 0, rand_range(-radius, radius))
+	var random_position = Vector3(randf_range(-radius, radius), 0, randf_range(-radius, radius))
 	move_to(random_position)
 
 

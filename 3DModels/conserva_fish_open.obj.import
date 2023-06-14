@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/conserva_fish_open.obj-69dbfaca7265aab87f9489b6d2cc4a6c.mesh"
+uid="uid://b36grposw7ppa"
+path="res://.godot/imported/conserva_fish_open.obj-69dbfaca7265aab87f9489b6d2cc4a6c.mesh"
 
 [deps]
 
-files=[ "res://.import/conserva_fish_open.obj-69dbfaca7265aab87f9489b6d2cc4a6c.mesh" ]
+files=["res://.godot/imported/conserva_fish_open.obj-69dbfaca7265aab87f9489b6d2cc4a6c.mesh"]
 
 source_file="res://3DModels/conserva_fish_open.obj"
-dest_files=[ "res://.import/conserva_fish_open.obj-69dbfaca7265aab87f9489b6d2cc4a6c.mesh", "res://.import/conserva_fish_open.obj-69dbfaca7265aab87f9489b6d2cc4a6c.mesh" ]
+dest_files=["res://.godot/imported/conserva_fish_open.obj-69dbfaca7265aab87f9489b6d2cc4a6c.mesh", "res://.godot/imported/conserva_fish_open.obj-69dbfaca7265aab87f9489b6d2cc4a6c.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

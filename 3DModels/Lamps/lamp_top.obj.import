@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/lamp_top.obj-ce07b05c53a6e0c5f1637b3b25d8a18e.mesh"
+uid="uid://b2rowwrpy60dd"
+path="res://.godot/imported/lamp_top.obj-ce07b05c53a6e0c5f1637b3b25d8a18e.mesh"
 
 [deps]
 
-files=[ "res://.import/lamp_top.obj-ce07b05c53a6e0c5f1637b3b25d8a18e.mesh" ]
+files=["res://.godot/imported/lamp_top.obj-ce07b05c53a6e0c5f1637b3b25d8a18e.mesh"]
 
 source_file="res://3DModels/Lamps/lamp_top.obj"
-dest_files=[ "res://.import/lamp_top.obj-ce07b05c53a6e0c5f1637b3b25d8a18e.mesh", "res://.import/lamp_top.obj-ce07b05c53a6e0c5f1637b3b25d8a18e.mesh" ]
+dest_files=["res://.godot/imported/lamp_top.obj-ce07b05c53a6e0c5f1637b3b25d8a18e.mesh", "res://.godot/imported/lamp_top.obj-ce07b05c53a6e0c5f1637b3b25d8a18e.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

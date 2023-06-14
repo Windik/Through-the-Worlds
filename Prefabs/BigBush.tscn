@@ -1,16 +1,16 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://3DModels/Bush/bush1.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://3DModels/Bush/Bush1.png" type="Texture" id=2]
+[ext_resource path="res://3DModels/Bush/Bush1.png" type="Texture2D" id=2]
 
-[sub_resource type="SpatialMaterial" id=1]
+[sub_resource type="StandardMaterial3D" id=1]
 albedo_color = Color( 0.0941176, 0.505882, 0, 1 )
 albedo_texture = ExtResource( 2 )
 
-[node name="BigBush" type="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4903, 0.585675, 9.58882 )
+[node name="BigBush" type="StaticBody3D"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.4903, 0.585675, 9.58882 )
 
-[node name="bush1" type="MeshInstance" parent="."]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0135738, 0.0500097, 0.0502357 )
+[node name="bush1" type="MeshInstance3D" parent="."]
+transform = Transform3D( 3, 0, 0, 0, 3, 0, 0, 0, 3, -0.0135738, 0.0500097, 0.0502357 )
 mesh = ExtResource( 1 )
 material/0 = SubResource( 1 )

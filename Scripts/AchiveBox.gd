@@ -5,14 +5,14 @@ var start_pos_x = 723
 var current_pos_y = 602
 var current_pos_x = 723
 var end_pos_y
-export var get_achive = false
+@export var get_achive = false
 var windw
 var show_speed = 40
 var start_timer = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	windw = OS.get_window_size()
+	windw = get_window().get_size()
 	
 	start_pos_y = windw[1] + 50
 	start_pos_x = windw[0] - 300

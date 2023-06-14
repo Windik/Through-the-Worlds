@@ -2,10 +2,10 @@
 
 [ext_resource path="res://3DModels/Lamps/lamp_wallp.obj" type="ArrayMesh" id=1]
 
-[sub_resource type="SpatialMaterial" id=25]
+[sub_resource type="StandardMaterial3D" id=25]
 albedo_color = Color( 0.847059, 0.337255, 0, 1 )
 
-[sub_resource type="SpatialMaterial" id=26]
+[sub_resource type="StandardMaterial3D" id=26]
 albedo_color = Color( 0.992157, 1, 0, 1 )
 emission_enabled = true
 emission = Color( 0.517647, 0.517647, 0, 1 )
@@ -13,19 +13,19 @@ emission_energy = 16.0
 emission_operator = 0
 emission_on_uv2 = false
 
-[node name="WallLamp" type="StaticBody"]
-transform = Transform( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -9.05906, 4.99961, -24.1545 )
+[node name="WallLamp" type="StaticBody3D"]
+transform = Transform3D( -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, -9.05906, 4.99961, -24.1545 )
 
-[node name="lamp_wallp" type="MeshInstance" parent="."]
-transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+[node name="lamp_wallp" type="MeshInstance3D" parent="."]
+transform = Transform3D( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0 )
 mesh = ExtResource( 1 )
 material/0 = SubResource( 25 )
 material/1 = SubResource( 26 )
 
-[node name="SpotLight" type="SpotLight" parent="."]
-transform = Transform( 0.707107, -1.66155e-15, 0.707107, 0.707107, -6.18172e-08, -0.707107, 4.37114e-08, 1, -4.37114e-08, 0.122903, 0, 0 )
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D( 0.707107, -1.66155e-15, 0.707107, 0.707107, -6.18172e-08, -0.707107, 4.37114e-08, 1, -4.37114e-08, 0.122903, 0, 0 )
 spot_range = 8.54491
 
-[node name="OmniLight" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.122128, 0 )
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.122128, 0 )
 omni_range = 2.29963

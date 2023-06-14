@@ -3,28 +3,28 @@
 [ext_resource path="res://3DModels/Lamps/lamp_top.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://top_lamp_base.tres" type="Material" id=2]
 
-[sub_resource type="SpatialMaterial" id=25]
+[sub_resource type="StandardMaterial3D" id=25]
 emission_enabled = true
 emission = Color( 0.717647, 0.596078, 0, 1 )
 emission_energy = 8.0
 emission_operator = 0
 emission_on_uv2 = false
 
-[node name="TopLamp" type="StaticBody"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6054, 5.9763, 3.18367 )
+[node name="TopLamp" type="StaticBody3D"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.6054, 5.9763, 3.18367 )
 
-[node name="lamp_top" type="MeshInstance" parent="."]
-transform = Transform( -0.2, 1.74846e-08, 0, -1.74846e-08, -0.2, 0, 0, 0, 0.2, 0, 0, 0 )
+[node name="lamp_top" type="MeshInstance3D" parent="."]
+transform = Transform3D( -0.2, 1.74846e-08, 0, -1.74846e-08, -0.2, 0, 0, 0, 0.2, 0, 0, 0 )
 mesh = ExtResource( 1 )
 skeleton = NodePath("../..")
 material/0 = ExtResource( 2 )
 material/1 = SubResource( 25 )
 
-[node name="SpotLight" type="SpotLight" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 4.76837e-07 )
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 4.76837e-07 )
 spot_range = 7.11883
 spot_angle = 56.1691
 
-[node name="OmniLight" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.103812, -0.168487 )
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.103812, -0.168487 )
 omni_range = 1.98815

@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/stick4.obj-9b6e431f3e9414b71025714ffc04ca8b.mesh"
+uid="uid://dd5cflft8ih1i"
+path="res://.godot/imported/stick4.obj-9b6e431f3e9414b71025714ffc04ca8b.mesh"
 
 [deps]
 
-files=[ "res://.import/stick4.obj-9b6e431f3e9414b71025714ffc04ca8b.mesh" ]
+files=["res://.godot/imported/stick4.obj-9b6e431f3e9414b71025714ffc04ca8b.mesh"]
 
 source_file="res://3DModels/Trees/lowpoly-sticks/source/stick4.obj"
-dest_files=[ "res://.import/stick4.obj-9b6e431f3e9414b71025714ffc04ca8b.mesh", "res://.import/stick4.obj-9b6e431f3e9414b71025714ffc04ca8b.mesh" ]
+dest_files=["res://.godot/imported/stick4.obj-9b6e431f3e9414b71025714ffc04ca8b.mesh", "res://.godot/imported/stick4.obj-9b6e431f3e9414b71025714ffc04ca8b.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

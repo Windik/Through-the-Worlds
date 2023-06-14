@@ -1,10 +1,10 @@
-extends RigidBody
+extends RigidBody3D
 
-export var speed = 30
-export var damage = 30
+@export var speed = 30
+@export var damage = 30
 
 func _physics_process(delta):
-	translation -= global_transform.basis.z * speed * delta
+	position -= global_transform.basis.z * speed * delta
 
 
 

@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/desk_lamp.obj-1c8878a9797e901073eb1eeb72a67a15.mesh"
+uid="uid://d0gw0ujgvpgfc"
+path="res://.godot/imported/desk_lamp.obj-1c8878a9797e901073eb1eeb72a67a15.mesh"
 
 [deps]
 
-files=[ "res://.import/desk_lamp.obj-1c8878a9797e901073eb1eeb72a67a15.mesh" ]
+files=["res://.godot/imported/desk_lamp.obj-1c8878a9797e901073eb1eeb72a67a15.mesh"]
 
 source_file="res://3DModels/desk_lamp.obj"
-dest_files=[ "res://.import/desk_lamp.obj-1c8878a9797e901073eb1eeb72a67a15.mesh", "res://.import/desk_lamp.obj-1c8878a9797e901073eb1eeb72a67a15.mesh" ]
+dest_files=["res://.godot/imported/desk_lamp.obj-1c8878a9797e901073eb1eeb72a67a15.mesh", "res://.godot/imported/desk_lamp.obj-1c8878a9797e901073eb1eeb72a67a15.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

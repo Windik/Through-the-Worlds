@@ -1,12 +1,12 @@
-extends KinematicBody
+extends CharacterBody3D
 
-export var mouse_sensitivity = 0.06
-export var fall = Vector3()
-export var gravity = 0.05
-export var jump = 2
-export var speed = 1.5
-export var normal_speed = 1.5
-export var shift_speed = 3
+@export var mouse_sensitivity = 0.06
+@export var fall = Vector3()
+@export var gravity = 0.05
+@export var jump = 2
+@export var speed = 1.5
+@export var normal_speed = 1.5
+@export var shift_speed = 3
 
 func _physics_process(delta):
 	var direction = Vector3()
@@ -25,8 +25,12 @@ func _physics_process(delta):
 	if (Input.is_action_pressed("exit")):
 		get_tree().quit()
 		
-	move_and_slide(direction, Vector3.UP)
-	move_and_slide(fall, Vector3.UP)
+	set_velocity(direction)
+	set_up_direction(Vector3.UP)
+	move_and_slide()
+	set_velocity(fall)
+	set_up_direction(Vector3.UP)
+	move_and_slide()
 	if !is_on_floor():
 		fall.y -= gravity
 	if (Input.is_action_just_pressed("ui_accept") and is_on_floor()):
@@ -34,8 +38,8 @@ func _physics_process(delta):
 	
 func _input(event): # функция, проверяющая события ввода
 	if event is InputEventMouseMotion: # если событие - движение мышкой
-		rotate_y(deg2rad(-event.relative.x * mouse_sensitivity)) 
-		$Camera.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity))
+		rotate_y(deg_to_rad(-event.relative.x * mouse_sensitivity)) 
+		$Camera3D.rotate_x(deg_to_rad(-event.relative.y * mouse_sensitivity))
 		
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)

@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/chair.obj-c41e6b8e1b1b73784de014efb0d26bb1.mesh"
+uid="uid://7pqlni3ah53h"
+path="res://.godot/imported/chair.obj-c41e6b8e1b1b73784de014efb0d26bb1.mesh"
 
 [deps]
 
-files=[ "res://.import/chair.obj-c41e6b8e1b1b73784de014efb0d26bb1.mesh" ]
+files=["res://.godot/imported/chair.obj-c41e6b8e1b1b73784de014efb0d26bb1.mesh"]
 
 source_file="res://3DModels/chair.obj"
-dest_files=[ "res://.import/chair.obj-c41e6b8e1b1b73784de014efb0d26bb1.mesh", "res://.import/chair.obj-c41e6b8e1b1b73784de014efb0d26bb1.mesh" ]
+dest_files=["res://.godot/imported/chair.obj-c41e6b8e1b1b73784de014efb0d26bb1.mesh", "res://.godot/imported/chair.obj-c41e6b8e1b1b73784de014efb0d26bb1.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/Pistol_shot.wav-d0fb14cce6a81cdef77b142920f16aee.sample"
+type="AudioStreamWAV"
+uid="uid://d3cvbj31ev64"
+path="res://.godot/imported/Pistol_shot.wav-d0fb14cce6a81cdef77b142920f16aee.sample"
 
 [deps]
 
 source_file="res://Sounds/Pistol_shot.wav"
-dest_files=[ "res://.import/Pistol_shot.wav-d0fb14cce6a81cdef77b142920f16aee.sample" ]
+dest_files=["res://.godot/imported/Pistol_shot.wav-d0fb14cce6a81cdef77b142920f16aee.sample"]
 
 [params]
 

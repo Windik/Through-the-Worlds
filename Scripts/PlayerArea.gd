@@ -1,4 +1,4 @@
-extends Area
+extends Area3D
 
 var hints
 var gates
@@ -18,8 +18,8 @@ var fall = Vector3.ZERO
 func _ready():
 	if get_tree().current_scene.name == "Lvl1":
 		gates = $"../../GatesDoor"
-	hints = Interface.get_node("Hints")  # get_tree().get_root().find_node("Hints")
-	connect("cell1_item1", Interface, "_on_transfer_value") ##############
+	hints = Interface.get_node("Hints")  # get_tree().get_root().find_child("Hints")
+	connect("cell1_item1", Callable(Interface, "_on_transfer_value")) ##############
 	
 
 func _physics_process(delta):
@@ -30,17 +30,20 @@ func _physics_process(delta):
 		print("Near bunker entrence...")
 		if (Input.is_action_just_pressed("interaction")):
 			hints.text = "Open bunker door..."
-			get_tree().change_scene("res://Levels/Lvl2.tscn")
+			get_tree().change_scene_to_file("res://Levels/Lvl2.tscn")
 			
 	if portalTrigger:
 		if (Input.is_action_just_pressed("interaction")):
-			get_tree().change_scene("res://Levels/HomeDimension.tscn")
+			get_tree().change_scene_to_file("res://Levels/HomeDimension.tscn")
 	if get_tree().current_scene.name == "Lvl1":
 		if gates_open:
 			# print(gates.transform.origin.y)
 			if gates.transform.origin.y < 4:
 				fall.y += 0.03 * delta
-				gates.move_and_slide(fall, Vector3.UP)
+				gates.set_velocity(fall)
+				gates.set_up_direction(Vector3.UP)
+				gates.move_and_slide()
+				gates.velocity
 	if oldKeyTrigger:  ##################
 		if (Input.is_action_just_pressed("interaction")):  #############
 			oldKey.queue_free()  ############
@@ -54,7 +57,7 @@ func _physics_process(delta):
 		if oldKeyInInventory:
 			if (Input.is_action_just_pressed("interaction")):
 				Interface.cell1_item1 = ""
-				get_tree().change_scene("res://Levels/Lvltower.tscn")
+				get_tree().change_scene_to_file("res://Levels/Lvltower.tscn")
 		
 				
 

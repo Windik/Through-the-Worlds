@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/dsplpain.wav-30ca6deeab92bdbfbe704ee23f26ee68.sample"
+type="AudioStreamWAV"
+uid="uid://3yi5ryybxn80"
+path="res://.godot/imported/dsplpain.wav-30ca6deeab92bdbfbe704ee23f26ee68.sample"
 
 [deps]
 
 source_file="res://Sounds/dsplpain.wav"
-dest_files=[ "res://.import/dsplpain.wav-30ca6deeab92bdbfbe704ee23f26ee68.sample" ]
+dest_files=["res://.godot/imported/dsplpain.wav-30ca6deeab92bdbfbe704ee23f26ee68.sample"]
 
 [params]
 

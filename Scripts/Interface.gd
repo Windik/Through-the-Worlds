@@ -38,10 +38,10 @@ func _ready():
 	if get_tree().current_scene.name == "Menu":
 		invis()
 		invis = true
-	item1 = find_node("Item1")
-	item2 = find_node("Item2")
-	item3 = find_node("Item3")
-	item4 = find_node("Item4")
+	item1 = find_child("Item1")
+	item2 = find_child("Item2")
+	item3 = find_child("Item3")
+	item4 = find_child("Item4")
 
 func _on_transfer_value(value):
 	cell1_item1 = value

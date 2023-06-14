@@ -1,20 +1,21 @@
 [remap]
 
 importer="wavefront_obj"
+importer_version=1
 type="Mesh"
-path="res://.import/lamp_wallp.obj-34c8b7c4bf6b15665c71f5e6a209333f.mesh"
+uid="uid://2eiwa46qb5dh"
+path="res://.godot/imported/lamp_wallp.obj-34c8b7c4bf6b15665c71f5e6a209333f.mesh"
 
 [deps]
 
-files=[ "res://.import/lamp_wallp.obj-34c8b7c4bf6b15665c71f5e6a209333f.mesh" ]
+files=["res://.godot/imported/lamp_wallp.obj-34c8b7c4bf6b15665c71f5e6a209333f.mesh"]
 
 source_file="res://3DModels/Lamps/lamp_wallp.obj"
-dest_files=[ "res://.import/lamp_wallp.obj-34c8b7c4bf6b15665c71f5e6a209333f.mesh", "res://.import/lamp_wallp.obj-34c8b7c4bf6b15665c71f5e6a209333f.mesh" ]
+dest_files=["res://.godot/imported/lamp_wallp.obj-34c8b7c4bf6b15665c71f5e6a209333f.mesh", "res://.godot/imported/lamp_wallp.obj-34c8b7c4bf6b15665c71f5e6a209333f.mesh"]
 
 [params]
 
 generate_tangents=true
-scale_mesh=Vector3( 1, 1, 1 )
-offset_mesh=Vector3( 0, 0, 0 )
-octahedral_compression=true
-optimize_mesh_flags=4286
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

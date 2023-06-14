@@ -1,26 +1,26 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://3DModels/Trees/lowpoly-sticks/textures/basecolor1.jpeg" type="Texture" id=1]
+[ext_resource path="res://3DModels/Trees/lowpoly-sticks/textures/basecolor1.jpeg" type="Texture2D" id=1]
 [ext_resource path="res://3DModels/Trees/lowpoly-sticks/source/stick1.obj" type="ArrayMesh" id=2]
 
-[sub_resource type="SpatialMaterial" id=1]
+[sub_resource type="StandardMaterial3D" id=1]
 albedo_texture = ExtResource( 1 )
 uv1_scale = Vector3( 9.09, 6.032, 1.185 )
 uv1_offset = Vector3( 0.114, 0, 0 )
 uv1_triplanar_sharpness = 1.03526
 uv2_scale = Vector3( 1.041, 1, 1 )
 
-[sub_resource type="BoxShape" id=2]
-extents = Vector3( 0.125985, 0.017359, 0.0164632 )
+[sub_resource type="BoxShape3D" id=2]
+size = Vector3( 0.125985, 0.017359, 0.0164632 )
 
-[node name="Stick1" type="StaticBody"]
-transform = Transform( 0.790796, 0, 0.612079, 0, 1, 0, -0.612079, 0, 0.790796, -5.95391, -0.07771, 0 )
+[node name="Stick1" type="StaticBody3D"]
+transform = Transform3D( 0.790796, 0, 0.612079, 0, 1, 0, -0.612079, 0, 0.790796, -5.95391, -0.07771, 0 )
 
-[node name="stick1" type="MeshInstance" parent="."]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
+[node name="stick1" type="MeshInstance3D" parent="."]
+transform = Transform3D( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
 mesh = ExtResource( 2 )
 material/0 = SubResource( 1 )
 
-[node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
 shape = SubResource( 2 )
